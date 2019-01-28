@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+
+/*首页头像悬停转动*/
+/*.thumb-lg{
+    width:130px;
+}
+
+.avatar{
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out; 
+}
+
+.avatar:hover{
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+}
+
+#aside-user span.avatar{
+    animation-timing-function:cubic-bezier(0,0,.07,1)!important;
+    border:0 solid
+}
+
+#aside-user span.avatar:hover{
+    transform:rotate(360deg) scale(1.2);
+    border-width:5px;
+    animation:avatar .5s
+}
+*/
+
+/*头像无限转动*/
+@-webkit-keyframes rotation{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.img-full{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+
+/*首页文章a标签颜色渐变*/
+.index-post-title a:hover{
+     color:rgba(107, 209, 255, 1);
+     transition:color 0.2s linear
+}
+
+/*首页文章图片获取焦点放大*/
+.item-thumb{
+    cursor: pointer;  
+    transition: all 0.6s;  
+}
+
+.item-thumb:hover{
+      transform: scale(1.06);  
+}
+
+.item-thumb-small{
+    cursor: pointer;  
+    transition: all 0.6s;
+}
+
+.item-thumb-small:hover{
+    transform: scale(1.06);
+}
+
+/*首页文章版式圆角化,整体大小位置*/
+.panel{
+    border: none;
+    border-radius: 7px;
+}
+
+.panel-small{
+    border: none;
+    border-radius: 7px;
+}
+
+.item-thumb{
+    border-radius: 7px;  
+}
+
+/* tag-clould-color 彩色标签云 */
+#tag-clould-color {
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin: 3px 3px 3px 0;
+    display: inline-block;
+}
+
+/*标签*/
+.bg-info {
+    color: #ffffff;
+    /*background-color: #9763ff9e;*/
+    /*border-radius: 10px;*/
+}
+
+/*头像转动*/
+@-webkit-keyframes rotation{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.img-circle{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+
+
+@-webkit-keyframes rotation{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.skPlayer-cover{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+
+#post-panel{
+	background:rgba(255,255,255,0);
+}
+
+textarea#comment{
+	border-radius: 5px;
+    background-color: rgba(255,255,255,0.7)!important;
+ 	margin-bottom: 10px;
+}
+
+.entry-content{
+	background-color: rgba(255,255,255,0);
+}
+
+.b-b{
+	background: #e4eaec;
+}
+
+.l-h-2x{
+	line-height:initial;
+}
+
+.form-control{
+	background-color: rgba(255,255,255,0.7);
+}
+
+.m-b-lg {
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0.62);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.text-center{
+	background-color: rgba(255,255,255,0);
+}
+
+/*熊掌号*/
+.xiongzhanghao{background-color:#fff;margin:20px 0;position:relative;z-index:0;overflow:hidden;-webkit-tap-highlight-color:transparent;text-align:center;}
+.xiongzhanghao_touxiang img{width:67px;height:67px;border:1px solid transparent;border-radius:50%;margin-top:26px;}
+.xiongzhanghao_biaoti{fon-size:16px;color:#333;margin-top:5px;line-height:16px;font-weight:600;}
+.xiongzhanghao_miaoshu{width:70%;margin:auto;margin-top:10px;font-size:13px;color:#666;line-height:17px;font-weight:300;}
+.xiongzhanghao_ck{margin:13px 0 25px;}
+.xiongzhanghao_chakan{width:120px;padding:8px 0;font-weight:300;font-size:13px;line-height:13px;vertical-align:middle;display:inline-block;color:#fff;background:#3897f0;border-radius:3px;-webkit-tap-highlight-color:transparent;}
