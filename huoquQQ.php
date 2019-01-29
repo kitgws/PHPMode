@@ -1,12 +1,4 @@
 <?php
-
-//  论坛ID:POST老司机
-//  专业接单，有关PHP软件，淘宝软件都接
-//  QQ:910177198
-
-
-
-
 // 应用公共文件
 error_reporting(E_ALL ^ E_NOTICE);//显示除去 E_NOTICE 之外的所有错误信息
 error_reporting(E_ERROR | E_WARNING | E_PARSE);//报告运行时错误
